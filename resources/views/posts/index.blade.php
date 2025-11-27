@@ -30,6 +30,7 @@
                                     <td class="px-6 py-4 border-b">{{ $post->title }}</td>
                                     <td class="px-6 py-4 border-b">{{ $post->category->name }}</td>
                                     <td class="px-6 py-4 border-b">
+                                        <a href="{{ route('posts.show', $post) }}"> Ver </a>
                                         <a href="{{ route('posts.edit', $post) }}" 
                                            class="text-blue-600 hover:text-blue-900">
                                             Edit

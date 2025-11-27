@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 // use Illuminate\Support\Facades\Schema;
 use App\Models\Category;
 use App\Models\Post;
+use \App\Models\User;
 
 
 /**
@@ -30,6 +31,7 @@ class PostFactory extends Factory
             'title' => fake()->sentence(),
             'text' => fake()->paragraph(3, true),
             'category_id' => Category::all()->random()->id,
+            'user_id' => User::all()->random()->id,
         ];
     }
 }
